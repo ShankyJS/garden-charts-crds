@@ -1,0 +1,11 @@
+---
+kind: Module
+type: helm
+name: kong
+namespace: kong
+description: This module installs kong in our Kubernetes Cluster.
+repositoryUrl: git@github.com:Kong/charts.git#master
+chartPath: ./charts/kong
+values:
+  ingressController:
+    installCRDs: true
